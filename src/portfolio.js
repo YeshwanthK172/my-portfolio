@@ -47,7 +47,8 @@ const skillsSection = {
     emoji("⚡ Integrate payment gateways (Razorpay, Stripe)"),
     emoji("⚡ Database handling: MySQL, PostgreSQL, MSSQL, MongoDB"),
     emoji("⚡ Cloud storage with Cloudinary & file handling"),
-    emoji("⚡ SNMP-based device profiling and monitoring")
+    emoji("⚡ SNMP-based device profiling and monitoring"),
+    emoji("⚡ Build AI-powered applications using ML, RAG, and LLMs")
   ],
   softwareSkills: [
     { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
@@ -110,7 +111,7 @@ const workExperiences = {
       role: "Java Developer Intern",
       company: "Zoho Corporation Pvt. Ltd.",
       companylogo: require("./assets/images/zoho.png"),
-      date: "Jun 2025 – Present",
+      date: "Jun 2025 – Dec 2025",
       desc: "Working on Real-Time SNMP-Based Device Profiling: backend development in Java to automate device identification, parsing MIB files, and retrieving OIDs."
     }
   ]
@@ -152,6 +153,30 @@ const bigProjects = {
         "React + Node.js + MongoDB application to manage Program Officers, Volunteers, Events, and Announcements for NSS.",
       footerLink: [
         { name: "GitHub", url: "https://github.com/sathishkumar55555/NSS_Website" }
+      ]
+    },
+    {
+      image: require("./assets/images/RAG.jpeg"),
+      projectName: "LLM RAG Knowledge Assistant",
+      projectDesc:
+        "A Retrieval-Augmented Generation (RAG) based application that enables intelligent question answering over custom documents using Large Language Models (LLMs), embeddings, and vector databases.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/YeshwanthK172/LLM-RAG-Knowledge-Assistant"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/ai.jpeg"),
+      projectName: "AI Study Planner",
+      projectDesc:
+        "AI Study Planner is an intelligent learning platform that helps students study smarter by transforming uploaded documents into interactive learning experiences using Generative AI.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Rajeshwari1403/AI_Study_Planner.git"
+        }
       ]
     }
   ],
@@ -217,6 +242,39 @@ const achievementSection = {
         {
           name: "View Certificate",
           url: "https://www.udemy.com/certificate/UC-ec31ec77-365d-4a34-8b91-ebb878a942e0/"
+        }
+      ]
+    },
+    {
+      title: "Using Python to Interact with the Operating System",
+      subtitle: "Certified by Coursera",
+      image: require("./assets/images/coursera.png"), // replace with a certificate icon/logo
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://coursera.org/share/4ef2ec75b10c85fc08523b98bc104288"
+        }
+      ]
+    },
+    {
+      title: "Troubleshooting and Debugging Techniques",
+      subtitle: "Certified by Coursera",
+      image: require("./assets/images/coursera.png"), // replace with a certificate icon/logo
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://coursera.org/share/b0d18d2bf29208eeba6866a8f4d0fd87"
+        }
+      ]
+    },
+    {
+      title: "Introduction to Git and GitHub",
+      subtitle: "Certified by Coursera",
+      image: require("./assets/images/coursera.png"), // replace with a certificate icon/logo
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://coursera.org/share/6deff33d1561de6c66d4465cf48615bd"
         }
       ]
     },

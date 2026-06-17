@@ -45,9 +45,42 @@
   align-items: center;
 }
 .achievement-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 1.5rem;
+  padding: 1rem 0.5rem 1.5rem;
+  scroll-behavior: smooth;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #6a11cb transparent;
+}
+
+/* Chrome, Edge, Safari */
+.achievement-cards-div::-webkit-scrollbar {
+  height: 10px;
+}
+
+.achievement-cards-div::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+}
+
+.achievement-cards-div::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border-radius: 20px;
+}
+
+.achievement-cards-div::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+}
+
+/* Card width */
+.achievement-cards-div > * {
+  flex: 0 0 340px;
+  min-width: 340px;
 }
 .certificate-card-footer {
   display: flex;

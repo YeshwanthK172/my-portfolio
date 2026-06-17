@@ -22,9 +22,15 @@
   flex-direction: column;
   background-color: $lightBackground2;
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid $lightBorder1;
   justify-content: center;
+  min-width: 320px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
 }
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
@@ -59,9 +65,43 @@
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 1.5rem;
+  padding: 1rem 0.5rem 1.5rem;
+  scroll-behavior: smooth;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #6a11cb transparent;
+}
+
+/* Chrome, Edge, Safari */
+.projects-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.projects-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+}
+
+/* Each project card width */
+.projects-container > * {
+  flex: 0 0 340px;
+  min-width: 340px;
 }
 
 .project-card-footer span.project-tag {
