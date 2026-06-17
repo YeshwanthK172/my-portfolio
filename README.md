@@ -7,8 +7,8 @@ Welcome to my personal developer portfolio! This website showcases my skills, pr
 Add your deployed portfolio link here:
 
 ```text
-https://your-portfolio-link.com
-```
+[https://your-portfolio-link.com
+](https://yeshwanthk172.github.io/my-portfolio/)```
 
 ## 👨‍💻 About Me
 
